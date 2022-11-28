@@ -1,0 +1,103 @@
+body {
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgb(176, 232, 174);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.taskList {
+    background: #fff;
+    width: calc(100% - 20rem);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.taskList h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.taskListInp {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.taskListInp input {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.taskListInp button {
+    font-size: 36px;
+    background: #b2e7b0;
+    border: 1px solid #333;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.List li {
+    display: grid;
+    grid-template-columns: 1fr 95%;
+    grid-gap: 20px;
+    align-items: center;
+    font-family: monospace;
+}
+
+.removeItem {
+    display: flex;
+    background: #b2e7b0;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    line-height: normal;
+    padding: 6px 11px;
+    font-size: 18px;
+    font-family: monospace;
+    cursor: pointer;
+    font-weight: bold;
+}
+.removeItem span {
+    transform: rotate(45deg);
+}
+.listText{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.List {
+    display: grid;
+gap: 20px;
+}
