@@ -1,16 +1,20 @@
 import FooterAbout from "./Parts/FooterAbout";
+import FooterCopyrights from "./Parts/FooterCopyrights";
+import FooterFollow from "./Parts/FooterFollow";
+import Newsletter from "./Parts/Newsletter";
 
 const Footer = () => {
   return (
-    <footer className="lodge-footer" id="lodge-footer">
-      <div className="bg-footer">
+    <>
+      <footer className="bg-gray-900">
         <div className="container mx-auto">
-          <div className="grid grid-cols-4">
-              <FooterAbout />
-          </div>
+          <FooterAbout />
+          <Newsletter />
+          <FooterFollow />
+          <FooterCopyrights />
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 

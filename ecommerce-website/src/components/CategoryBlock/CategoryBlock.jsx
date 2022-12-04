@@ -1,25 +1,29 @@
+import { useState } from "react";
 import category1 from "../../images/i-1.png";
 import category2 from "../../images/i-2.png";
 import category3 from "../../images/i-3.png";
 
 const CategoryBlock = () => {
-  const arr = [
-    {
-      tag: "Best Seller",
-      image: category1,
-      title: "Bracelet1",
-    },
-    {
-      tag: "Best Price",
-      image: category2,
-      title: "Bracelet2",
-    },
-    {
-      tag: "Most Viewed",
-      image: category3,
-      title: "Bracelet3",
-    },
-  ];
+  const [arr, nextArr] = useState(
+    [
+      {
+        tag: "Best Seller",
+        image: category1,
+        title: "Bracelet1",
+      },
+      {
+        tag: "Best Price",
+        image: category2,
+        title: "Bracelet2",
+      },
+      {
+        tag: "Most Viewed",
+        image: category3,
+        title: "Bracelet3",
+      }
+    ],
+  );
+
   return (
     <>
       {arr.map((curElem, idx) => {
